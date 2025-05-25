@@ -3,11 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Capítulo III</title>
-  <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Playfair+Display&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/st_hojas.css" />
+  <title>Capítulo III – La primera vez que la vi</title>
+
+  <!-- Fuente legible tipo libro -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="st_hojas.css" />
 </head>
 <body>
+
   <div class="book-container">
     <h1>Capítulo III – La primera vez que la vi</h1>
 
@@ -85,10 +90,15 @@
     Y desde ese entonces, sigo preguntándome:  
     ¿Ella también sintió algo ese día?  
     ¿O solo fui yo… viendo más de la cuenta?</p>
-    <button onclick="prevpage3()">ANTERIOR</button>
-    <button onclick="nextpage3()" >SIGUIENTE</button>
 
+    <!-- Navegación -->
+    <div class="nav">
+      <button onclick="goToChapter('capitulo2.html')">← ANTERIOR</button>
+      <button onclick="goToChapter('capitulo4.html')">SIGUIENTE →</button>
+    </div>
   </div>
+
+  <!-- Script principal -->
+  <script src="cg_hojas.js"></script>
 </body>
-<script src="/cg_hojas.js"></script>
 </html>
